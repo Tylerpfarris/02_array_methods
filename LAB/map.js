@@ -1,16 +1,13 @@
 const map = (arr, callback) => {
-    let newArr = []
+    let newArr = [];
     for (const i of arr) {
         const newEl = callback(i);
-        newArr = [...newArr, newEl]   
+        newArr = [...newArr, newEl];
     }
-    return newArr
+    return newArr;
 }
 
-const filter = (arr, callback) => {
-    
-}
 
-module.exports = {
-    map,
-}
+
+module.exports = map
+
